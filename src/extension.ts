@@ -7,16 +7,12 @@ export function activate(context: vscode.ExtensionContext) {
 
     // Register commands.
     context.subscriptions.push(
-        // Symbol operations.
-        // Set custom symbol via keybindings.
-        vscode.commands.registerCommand('bujo.symbol.setSymbol', operations.symbol.setSymbol),
-
         // Symbol default symbols.
         vscode.commands.registerCommand('bujo.symbol.setCompleted', operations.symbol.setSymbolCompleted),
         vscode.commands.registerCommand('bujo.symbol.setOpened', operations.symbol.setSymbolOpened),
         vscode.commands.registerCommand('bujo.symbol.setStarted', operations.symbol.setSymbolStarted),
         vscode.commands.registerCommand('bujo.symbol.setDropped', operations.symbol.setSymbolDropped),
-
+        vscode.commands.registerCommand('bujo.symbol.setEvent', operations.symbol.setSymbolEvent),
     );
 }
 

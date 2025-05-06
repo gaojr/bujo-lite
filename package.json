@@ -56,39 +56,27 @@
         "keybindings": [
             {
                 "key": "alt+x",
-                "command": "bujo.symbol.setSymbol",
-                "args": {
-                    "symbol": "x"
-                },
+                "command": "bujo.symbol.setCompleted",
                 "when": "editorTextFocus && editorLangId == markdown"
             },
             {
                 "key": "alt+o",
-                "command": "bujo.symbol.setSymbol",
-                "args": {
-                    "symbol": " "
-                },
+                "command": "bujo.symbol.setOpened",
                 "when": "editorTextFocus && editorLangId == markdown"
             },
             {
                 "key": "alt+-",
-                "command": "bujo.symbol.setSymbol",
-                "args": {
-                    "symbol": "-"
-                },
+                "command": "bujo.symbol.setDropped",
                 "when": "editorTextFocus && editorLangId == markdown"
             },
             {
                 "key": "alt+/",
-                "command": "bujo.symbol.setSymbol",
-                "args": {
-                    "symbol": "/"
-                },
+                "command": "bujo.symbol.setStarted",
                 "when": "editorTextFocus && editorLangId == markdown"
             },
             {
-                "key": "alt+p",
-                "command": "bujo.symbol.setSymbol",
+                "key": "alt+e",
+                "command": "bujo.symbol.setEvent",
                 "args": {
                     "symbol": "o"
                 },

@@ -42,9 +42,7 @@ export const setSymbol = (args: any): void => {
 
     // Update the task status.
     setSymbolOperation(args.symbol).then(success => {
-        if (success) {
-            window.showInformationMessage('Updated entry symbol.');
-        } else {
+        if (!success) {
             window.showErrorMessage("Failed to update task symbol");
         }
     }).catch(error => {
@@ -58,9 +56,7 @@ export const setSymbol = (args: any): void => {
  */
 export const setSymbolCompleted = (): void => {
     setSymbolOperation('x').then(success => {
-        if (success) {
-            window.showInformationMessage('Completed.');
-        } else {
+        if (!success) {
             window.showErrorMessage("Failed to update task symbol");
         }
     }).catch(error => {
@@ -74,9 +70,7 @@ export const setSymbolCompleted = (): void => {
  */
 export const setSymbolOpened = (): void => {
     setSymbolOperation(' ').then(success => {
-        if (success) {
-            window.showInformationMessage('Opened.');
-        } else {
+        if (!success) {
             window.showErrorMessage("Failed to update task symbol");
         }
     }).catch(error => {
@@ -86,13 +80,11 @@ export const setSymbolOpened = (): void => {
 
 
 /**
- * Started (i.e., in progress).
+ * Started.
  */
 export const setSymbolStarted = (): void => {
     setSymbolOperation('/').then(success => {
-        if (success) {
-            window.showInformationMessage('Started.');
-        } else {
+        if (!success) {
             window.showErrorMessage("Failed to update task symbol");
         }
     }).catch(error => {
@@ -106,9 +98,21 @@ export const setSymbolStarted = (): void => {
  */
 export const setSymbolDropped = (): void => {
     setSymbolOperation('-').then(success => {
-        if (success) {
-            window.showInformationMessage('Dropped.');
-        } else {
+        if (!success) {
+            window.showErrorMessage("Failed to update task symbol");
+        }
+    }).catch(error => {
+        window.showErrorMessage(error.message);
+    });
+};
+
+
+/**
+ * Event.
+ */
+export const setSymbolEvent = (): void => {
+    setSymbolOperation('o').then(success => {
+        if (!success) {
             window.showErrorMessage("Failed to update task symbol");
         }
     }).catch(error => {
