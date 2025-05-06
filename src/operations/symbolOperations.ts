@@ -54,38 +54,6 @@ export const setSymbol = (args: any): void => {
 
 
 /**
- * Migrated forward.
- */
-export const setSymbolMigratedForward = (): void => {
-    setSymbolOperation('>').then(success => {
-        if (success) {
-            window.showInformationMessage('Migrated forward.');
-        } else {
-            window.showErrorMessage("Failed to update task symbol");
-        }
-    }).catch(error => {
-        window.showErrorMessage(error.message);
-    });
-};
-
-
-/**
- * Migrated backward.
- */
-export const setSymbolMigratedBackward = (): void => {
-    setSymbolOperation('<').then(success => {
-        if (success) {
-            window.showInformationMessage('Migrated backward.');
-        } else {
-            window.showErrorMessage("Failed to update task symbol");
-        }
-    }).catch(error => {
-        window.showErrorMessage(error.message);
-    });
-};
-
-
-/**
  * Completed.
  */
 export const setSymbolCompleted = (): void => {

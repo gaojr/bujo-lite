@@ -1,6 +1,4 @@
 import * as symbol from './symbolOperations';
-import * as scheduler from './scheduleOperations';
-import * as tracker from './trackOperations';
 
 
 /**
@@ -11,8 +9,6 @@ import * as tracker from './trackOperations';
  */
 const operations = {
     symbol,
-    scheduler,
-    tracker
 };
 
 
