@@ -25,7 +25,7 @@ export class Symbol {
     const pattern = Pattern.extractSymbol(symbol)
 
     // Match and return.
-    return line.text.match(pattern)!.index!
+    return line.text.match(pattern)?.index ?? 0
   }
 
   /**

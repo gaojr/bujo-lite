@@ -34,11 +34,11 @@ export class EntryLine implements Entry {
     const match = text.match(Pattern.extractEntry)
 
     // Set the entry elements.
-    this.notationOpen = match!.groups!.open
-    this.notationClose = match!.groups!.close
-    this.symbol = match!.groups!.symbol
-    this.modifier = match!.groups!.modifier
-    this.text = match!.groups!.text
+    this.notationOpen = match?.groups?.open ?? ''
+    this.notationClose = match?.groups?.close ?? ''
+    this.symbol = match?.groups?.symbol ?? ''
+    this.modifier = match?.groups?.modifier ?? ''
+    this.text = match?.groups?.text ?? ''
   }
 
   /**

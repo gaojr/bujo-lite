@@ -14,4 +14,6 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 // Clean-up.
-export function deactivate() {}
+export function deactivate() {
+  console.log('bujo-lite deactivate.')
+}
