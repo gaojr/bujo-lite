@@ -1,5 +1,4 @@
-import * as symbol from './symbolOperations';
-
+import * as symbol from './symbolOperations'
 
 /**
  * Create operations module.
@@ -8,11 +7,10 @@ import * as symbol from './symbolOperations';
  * the command palette.
  */
 const operations = {
-    symbol,
-};
-
+  symbol,
+}
 
 /**
  * Export the bundled operations module.
  */
-export = operations;
+export = operations

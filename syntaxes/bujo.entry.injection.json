@@ -1,59 +1,54 @@
 {
-    "scopeName": "bujo.entry.injection",
-    "injectionSelector": "L:text.html.markdown",
-    "patterns": [
-        { "include": "#bujo-task-todo" },
-        { "include": "#bujo-task-doing" },
-        { "include": "#bujo-task-done" },
-        { "include": "#bujo-task-deleted" }
-    ],
-    "repository": {
-        "bujo-task-todo": {
-            "match": "(?<=\\s)(?<open>\\[)(?<symbol>\\s)(?<close>\\])(?=\\s*[?!*]?\\s*)(?!\\s*[?!*]?\\s*\\||\\s*[?!*]?\\s*$)(?:\\s*(?<modifier>[!?*])\\s*(?<textmod>.*?)|\\s*(?![!?*])\\s*(?<text>.*?))(?=\\s+\\^[a-z0-9]{6,}|\\s+\\||\\s*$)",
-            "captures": {
-                "1": { "name" : "bujo.task.todo.notation" },
-                "2": { "name" : "bujo.task.todo.symbol" },
-                "3": { "name" : "bujo.task.todo.notation" },
-                "4": { "name" : "bujo.task.todo.modifier" },
-                "6": { "name" : "bujo.task.todo.text" },
-                "5": { "name" : "bujo.task.todo.text.modifier" }
-            }
-        },
+  "scopeName": "bujo.entry.injection",
+  "injectionSelector": "L:text.html.markdown",
+  "patterns": [{ "include": "#bujo-task-todo" }, { "include": "#bujo-task-doing" }, { "include": "#bujo-task-done" }, { "include": "#bujo-task-deleted" }],
+  "repository": {
+    "bujo-task-todo": {
+      "match": "(?<=\\s)(?<open>\\[)(?<symbol>\\s)(?<close>\\])(?=\\s*[?!*]?\\s*)(?!\\s*[?!*]?\\s*\\||\\s*[?!*]?\\s*$)(?:\\s*(?<modifier>[!?*])\\s*(?<textmod>.*?)|\\s*(?![!?*])\\s*(?<text>.*?))(?=\\s+\\^[a-z0-9]{6,}|\\s+\\||\\s*$)",
+      "captures": {
+        "1": { "name": "bujo.task.todo.notation" },
+        "2": { "name": "bujo.task.todo.symbol" },
+        "3": { "name": "bujo.task.todo.notation" },
+        "4": { "name": "bujo.task.todo.modifier" },
+        "6": { "name": "bujo.task.todo.text" },
+        "5": { "name": "bujo.task.todo.text.modifier" }
+      }
+    },
 
-        "bujo-task-doing": {
-            "match": "(?<=\\s)(?<open>\\[)(?<symbol>\\/)(?<close>\\])(?=\\s*[?!*]?\\s*)(?!\\s*[?!*]?\\s*\\||\\s*[?!*]?\\s*$)(?:\\s*(?<modifier>[!?*])\\s*(?<textmod>.*?)|\\s*(?![!?*])\\s*(?<text>.*?))(?=\\s+\\^[a-z0-9]{6,}|\\s+\\||\\s*$)",
-            "captures": {
-                "1": { "name" : "bujo.task.doing.notation" },
-                "2": { "name" : "bujo.task.doing.symbol" },
-                "3": { "name" : "bujo.task.doing.notation" },
-                "4": { "name" : "bujo.task.doing.modifier" },
-                "6": { "name" : "bujo.task.doing.text" },
-                "5": { "name" : "bujo.task.doing.text.modifier" }
-            }
-        },
+    "bujo-task-doing": {
+      "match": "(?<=\\s)(?<open>\\[)(?<symbol>\\/)(?<close>\\])(?=\\s*[?!*]?\\s*)(?!\\s*[?!*]?\\s*\\||\\s*[?!*]?\\s*$)(?:\\s*(?<modifier>[!?*])\\s*(?<textmod>.*?)|\\s*(?![!?*])\\s*(?<text>.*?))(?=\\s+\\^[a-z0-9]{6,}|\\s+\\||\\s*$)",
+      "captures": {
+        "1": { "name": "bujo.task.doing.notation" },
+        "2": { "name": "bujo.task.doing.symbol" },
+        "3": { "name": "bujo.task.doing.notation" },
+        "4": { "name": "bujo.task.doing.modifier" },
+        "6": { "name": "bujo.task.doing.text" },
+        "5": { "name": "bujo.task.doing.text.modifier" }
+      }
+    },
 
-        "bujo-task-done": {
-            "match": "(?<=\\s)(?<open>\\[)(?<symbol>x)(?<close>\\])(?=\\s*[?!*]?\\s*)(?!\\s*[?!*]?\\s*\\||\\s*[?!*]?\\s*$)(?:\\s*(?<modifier>[!?*])\\s*(?<textmod>.*?)|\\s*(?![!?*])\\s*(?<text>.*?))(?=\\s+\\^[a-z0-9]{6,}|\\s+\\||\\s*$)",
-            "captures": {
-                "1": { "name" : "bujo.task.done.notation" },
-                "2": { "name" : "bujo.task.done.symbol" },
-                "3": { "name" : "bujo.task.done.notation" },
-                "4": { "name" : "bujo.task.done.modifier" },
-                "6": { "name" : "bujo.task.done.text" },
-                "5": { "name" : "bujo.task.done.text.modifier" }
-            }
-        },
+    "bujo-task-done": {
+      "match": "(?<=\\s)(?<open>\\[)(?<symbol>x)(?<close>\\])(?=\\s*[?!*]?\\s*)(?!\\s*[?!*]?\\s*\\||\\s*[?!*]?\\s*$)(?:\\s*(?<modifier>[!?*])\\s*(?<textmod>.*?)|\\s*(?![!?*])\\s*(?<text>.*?))(?=\\s+\\^[a-z0-9]{6,}|\\s+\\||\\s*$)",
+      "captures": {
+        "1": { "name": "bujo.task.done.notation" },
+        "2": { "name": "bujo.task.done.symbol" },
+        "3": { "name": "bujo.task.done.notation" },
+        "4": { "name": "bujo.task.done.modifier" },
+        "6": { "name": "bujo.task.done.text" },
+        "5": { "name": "bujo.task.done.text.modifier" }
+      }
+    },
 
-        "bujo-task-deleted": {
-            "match": "(?<=\\s)(?<open>\\[)(?<symbol>-)(?<close>\\])(?=\\s*[?!*]?\\s*)(?!\\s*[?!*]?\\s*\\||\\s*[?!*]?\\s*$)(?:\\s*(?<modifier>[!?*])\\s*(?<textmod>.*?)|\\s*(?![!?*])\\s*(?<text>.*?))(?=\\s+\\^[a-z0-9]{6,}|\\s+\\||\\s*$)",
-            "captures": {
-                "1": { "name" : "bujo.task.deleted.notation" },
-                "2": { "name" : "bujo.task.deleted.symbol" },
-                "3": { "name" : "bujo.task.deleted.notation" },
-                "4": { "name" : "bujo.task.deleted.modifier" },
-                "6": { "name" : "bujo.task.deleted.text" },
-                "5": { "name" : "bujo.task.deleted.text.modifier" }
-            }
-        }
+    "bujo-task-deleted": {
+      "match": "(?<=\\s)(?<open>\\[)(?<symbol>-)(?<close>\\])(?=\\s*[?!*]?\\s*)(?!\\s*[?!*]?\\s*\\||\\s*[?!*]?\\s*$)(?:\\s*(?<modifier>[!?*])\\s*(?<textmod>.*?)|\\s*(?![!?*])\\s*(?<text>.*?))(?=\\s+\\^[a-z0-9]{6,}|\\s+\\||\\s*$)",
+      "captures": {
+        "1": { "name": "bujo.task.deleted.notation" },
+        "2": { "name": "bujo.task.deleted.symbol" },
+        "3": { "name": "bujo.task.deleted.notation" },
+        "4": { "name": "bujo.task.deleted.modifier" },
+        "6": { "name": "bujo.task.deleted.text" },
+        "5": { "name": "bujo.task.deleted.text.modifier" }
+      }
     }
+  }
 }
