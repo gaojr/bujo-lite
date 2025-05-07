@@ -7,11 +7,9 @@ import { Symbol } from "../models/Symbol";
  * Set an entry's symbol.
  * @param newSymbol The new symbol for updating the entry.
  */
-async function setSymbolOperation(newSymbol: string): Promise<boolean> {
+const setSymbolOperation = async (newSymbol: string): Promise<boolean> => {
     // Ensure an editor is open.
     const editor: TextEditor | undefined = window.activeTextEditor;
-
-    // Ensure an editor is open.
     if (!editor) {
         throw new Error("No editors open.");
     }
@@ -32,16 +30,11 @@ async function setSymbolOperation(newSymbol: string): Promise<boolean> {
 
 /**
  * Wrapper for to the user command for the symbol setting operation.
+ * @param symbol The symbol for updating the entry.
  */
-export const setSymbol = (args: any): void => {
-    // Ensure symbol is provided.
-    if (!args.symbol) {
-        window.showErrorMessage('Symbol not provided via keybinding.');
-        return;
-    }
-
+export const setSymbol = (symbol: string = ' '): void => {
     // Update the task status.
-    setSymbolOperation(args.symbol).then(success => {
+    setSymbolOperation(symbol).then(success => {
         if (!success) {
             window.showErrorMessage("Failed to update task symbol");
         }
@@ -55,13 +48,7 @@ export const setSymbol = (args: any): void => {
  * Completed.
  */
 export const setSymbolCompleted = (): void => {
-    setSymbolOperation('x').then(success => {
-        if (!success) {
-            window.showErrorMessage("Failed to update task symbol");
-        }
-    }).catch(error => {
-        window.showErrorMessage(error.message);
-    });
+    setSymbol('x');
 };
 
 
@@ -69,13 +56,7 @@ export const setSymbolCompleted = (): void => {
  * Opened.
  */
 export const setSymbolOpened = (): void => {
-    setSymbolOperation(' ').then(success => {
-        if (!success) {
-            window.showErrorMessage("Failed to update task symbol");
-        }
-    }).catch(error => {
-        window.showErrorMessage(error.message);
-    });
+    setSymbol();
 };
 
 
@@ -83,13 +64,7 @@ export const setSymbolOpened = (): void => {
  * Started.
  */
 export const setSymbolStarted = (): void => {
-    setSymbolOperation('/').then(success => {
-        if (!success) {
-            window.showErrorMessage("Failed to update task symbol");
-        }
-    }).catch(error => {
-        window.showErrorMessage(error.message);
-    });
+    setSymbol('/');
 };
 
 
@@ -97,11 +72,5 @@ export const setSymbolStarted = (): void => {
  * Dropped.
  */
 export const setSymbolDropped = (): void => {
-    setSymbolOperation('-').then(success => {
-        if (!success) {
-            window.showErrorMessage("Failed to update task symbol");
-        }
-    }).catch(error => {
-        window.showErrorMessage(error.message);
-    });
+    setSymbol('-');
 };
