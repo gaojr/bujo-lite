@@ -73,14 +73,6 @@
                 "key": "alt+/",
                 "command": "bujo.symbol.setStarted",
                 "when": "editorTextFocus && editorLangId == markdown"
-            },
-            {
-                "key": "alt+e",
-                "command": "bujo.symbol.setEvent",
-                "args": {
-                    "symbol": "o"
-                },
-                "when": "editorTextFocus && editorLangId == markdown"
             }
         ],
         "configurationDefaults": {

@@ -5,8 +5,7 @@
         { "include": "#bujo-task-todo" },
         { "include": "#bujo-task-doing" },
         { "include": "#bujo-task-done" },
-        { "include": "#bujo-task-deleted" },
-        { "include": "#bujo-event" }
+        { "include": "#bujo-task-deleted" }
     ],
     "repository": {
         "bujo-task-todo": {
@@ -54,18 +53,6 @@
                 "4": { "name" : "bujo.task.deleted.modifier" },
                 "6": { "name" : "bujo.task.deleted.text" },
                 "5": { "name" : "bujo.task.deleted.text.modifier" }
-            }
-        },
-
-        "bujo-event": {
-            "match": "(?<=\\s)(?<open>\\[)(?<symbol>o)(?<close>\\])(?=\\s*[?!*]?\\s*)(?!\\s*[?!*]?\\s*\\||\\s*[?!*]?\\s*$)(?:\\s*(?<modifier>[!?*])\\s*(?<textmod>.*?)|\\s*(?![!?*])\\s*(?<text>.*?))(?=\\s+\\^[a-z0-9]{6,}|\\s+\\||\\s*$)",
-            "captures": {
-                "1": { "name" : "bujo.event.notation" },
-                "2": { "name" : "bujo.event.symbol" },
-                "3": { "name" : "bujo.event.notation" },
-                "4": { "name" : "bujo.event.modifier" },
-                "6": { "name" : "bujo.event.text" },
-                "5": { "name" : "bujo.event.text.modifier" }
             }
         }
     }

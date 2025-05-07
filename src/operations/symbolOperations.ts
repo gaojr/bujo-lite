@@ -105,17 +105,3 @@ export const setSymbolDropped = (): void => {
         window.showErrorMessage(error.message);
     });
 };
-
-
-/**
- * Event.
- */
-export const setSymbolEvent = (): void => {
-    setSymbolOperation('o').then(success => {
-        if (!success) {
-            window.showErrorMessage("Failed to update task symbol");
-        }
-    }).catch(error => {
-        window.showErrorMessage(error.message);
-    });
-};
