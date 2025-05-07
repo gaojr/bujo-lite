@@ -6,10 +6,10 @@ export function activate(context: vscode.ExtensionContext) {
   // Register commands.
   context.subscriptions.push(
     // Symbol default symbols.
-    vscode.commands.registerCommand('bujo.symbol.setCompleted', operations.symbol.setSymbolCompleted),
-    vscode.commands.registerCommand('bujo.symbol.setOpened', operations.symbol.setSymbolOpened),
-    vscode.commands.registerCommand('bujo.symbol.setStarted', operations.symbol.setSymbolStarted),
-    vscode.commands.registerCommand('bujo.symbol.setDropped', operations.symbol.setSymbolDropped)
+    vscode.commands.registerCommand('bujo-lite.symbol.setCompleted', operations.symbol.setSymbolCompleted),
+    vscode.commands.registerCommand('bujo-lite.symbol.setOpened', operations.symbol.setSymbolOpened),
+    vscode.commands.registerCommand('bujo-lite.symbol.setStarted', operations.symbol.setSymbolStarted),
+    vscode.commands.registerCommand('bujo-lite.symbol.setDropped', operations.symbol.setSymbolDropped)
   )
 }
 

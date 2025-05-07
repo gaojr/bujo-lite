@@ -25,10 +25,10 @@ Proposes commands and keybindings to effortlessly update task statuses.
 
 | Name                       | Description         |
 | -------------------------- | ------------------- |
-| `bujo.symbol.setCompleted` | BuJo: Set Completed |
-| `bujo.symbol.setOpened`    | BuJo: Set Open      |
-| `bujo.symbol.setStarted`   | BuJo: Set Started   |
-| `bujo.symbol.setDropped`   | BuJo: Set Dropped   |
+| `bujo-lite.symbol.setCompleted` | BuJo-Lite: Set Completed |
+| `bujo-lite.symbol.setOpened`    | BuJo-Lite: Set Open      |
+| `bujo-lite.symbol.setStarted`   | BuJo-Lite: Set Started   |
+| `bujo-lite.symbol.setDropped`   | BuJo-Lite: Set Dropped   |
 
 ## Release Notes
 

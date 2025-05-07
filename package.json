@@ -22,20 +22,20 @@
   "contributes": {
     "commands": [
       {
-        "command": "bujo.symbol.setCompleted",
-        "title": "BuJo: Set Completed"
+        "command": "bujo-lite.symbol.setCompleted",
+        "title": "BuJo-Lite: Set Completed"
       },
       {
-        "command": "bujo.symbol.setOpened",
-        "title": "BuJo: Set Open"
+        "command": "bujo-lite.symbol.setOpened",
+        "title": "BuJo-Lite: Set Open"
       },
       {
-        "command": "bujo.symbol.setStarted",
-        "title": "BuJo: Set Started"
+        "command": "bujo-lite.symbol.setStarted",
+        "title": "BuJo-Lite: Set Started"
       },
       {
-        "command": "bujo.symbol.setDropped",
-        "title": "BuJo: Set Dropped"
+        "command": "bujo-lite.symbol.setDropped",
+        "title": "BuJo-Lite: Set Dropped"
       }
     ],
     "grammars": [
@@ -56,22 +56,22 @@
     "keybindings": [
       {
         "key": "alt+x",
-        "command": "bujo.symbol.setCompleted",
+        "command": "bujo-lite.symbol.setCompleted",
         "when": "editorTextFocus && editorLangId == markdown"
       },
       {
         "key": "alt+o",
-        "command": "bujo.symbol.setOpened",
+        "command": "bujo-lite.symbol.setOpened",
         "when": "editorTextFocus && editorLangId == markdown"
       },
       {
         "key": "alt+-",
-        "command": "bujo.symbol.setDropped",
+        "command": "bujo-lite.symbol.setDropped",
         "when": "editorTextFocus && editorLangId == markdown"
       },
       {
         "key": "alt+/",
-        "command": "bujo.symbol.setStarted",
+        "command": "bujo-lite.symbol.setStarted",
         "when": "editorTextFocus && editorLangId == markdown"
       }
     ],
