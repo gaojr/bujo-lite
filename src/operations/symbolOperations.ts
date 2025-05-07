@@ -17,10 +17,10 @@ async function setSymbolOperation(newSymbol: string): Promise<boolean> {
     }
 
     // Make entry.
-    const entry = new EntryLine(editor, editor.document.lineAt(editor.selection.active.line));
+    const entry = new EntryLine(editor.document.lineAt(editor.selection.active.line));
 
     // Parse and set the entry elements.
-    await entry.parse(false);
+    await entry.parse();
 
     // Make symbol.
     const symbol = new Symbol(editor);
