@@ -8,5 +8,4 @@ export interface Entry {
   symbol: string
   modifier: string
   text: string
-  id: string
 }

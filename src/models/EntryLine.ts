@@ -11,7 +11,6 @@ export class EntryLine implements Entry {
   public symbol = ''
   public modifier = ''
   public text = ''
-  public id = ''
 
   /**
    * The editor and text line corresponding to the entry.
