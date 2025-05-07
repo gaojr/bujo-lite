@@ -37,7 +37,7 @@ export const setSymbol = (args: any): void => {
     // Ensure symbol is provided.
     if (!args.symbol) {
         window.showErrorMessage('Symbol not provided via keybinding.');
-        return
+        return;
     }
 
     // Update the task status.
@@ -48,7 +48,7 @@ export const setSymbol = (args: any): void => {
     }).catch(error => {
         window.showErrorMessage(error.message);
     });
-}
+};
 
 
 /**

@@ -43,7 +43,7 @@ export class Symbol {
         const index = this.getLineIndexAtSymbol(entry.line, entry.symbol);
 
         // Toggle symbol if the new symbol matches the current one.
-        if (toggle && entry.symbol == newSymbol) {
+        if (toggle && entry.symbol === newSymbol) {
             // Toggle between the current and the open symbol,
             entry.symbol = " ";
         } else {
