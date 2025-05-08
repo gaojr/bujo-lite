@@ -38,13 +38,7 @@ export class Symbol {
     const index = this.getLineIndexAtSymbol(entry.line, entry.symbol)
 
     // Toggle symbol if the new symbol matches the current one.
-    if (entry.symbol === newSymbol) {
-      // Toggle between the current and the open symbol,
-      entry.symbol = ' '
-    } else {
-      // Otherwise set the new symbol.
-      entry.symbol = newSymbol
-    }
+    entry.symbol = entry.symbol === newSymbol ? ' ' : newSymbol
 
     // Create range for replacement.
     const range: Range = new Range(entry.line.lineNumber, index, entry.line.lineNumber, index + 1)
