@@ -2,22 +2,30 @@
 
 'use strict'
 
-const path = require('path')
-const webpack = require('webpack')
+import { dirname, resolve } from 'path'
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 /**
- * @type {webpack.Configuration}
+ * @type {import("webpack").Configuration}
  */
 const config = {
   target: 'webworker',
   entry: './src/extension.ts',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: resolve(__dirname, 'dist'),
     filename: 'extension.js',
-    libraryTarget: 'commonjs2',
+    module: true,
+    library: { type: 'module' },
     devtoolModuleFilenameTemplate: '../[resource-path]',
   },
+  experiments: {
+    outputModule: true,
+  },
   devtool: 'source-map',
+  externalsType: 'commonjs',
   externals: {
     vscode: 'commonjs vscode',
   },
@@ -42,4 +50,4 @@ const config = {
   },
 }
 
-module.exports = config
+export default config
