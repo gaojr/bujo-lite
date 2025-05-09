@@ -2,7 +2,7 @@
   "name": "bujo-lite",
   "displayName": "Bullet Journal Markdown - Lite",
   "description": "Bullet Journal",
-  "publisher": "gaojr",
+  "author": "gaojr",
   "icon": "assets/icon/bujo_circle_128.png",
   "private": true,
   "version": "1.0.0",
