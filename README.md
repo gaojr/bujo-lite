@@ -23,8 +23,8 @@ Provides highlighting for the standard Bullet Journal entries.
 
 Proposes commands and keybindings to effortlessly update task statuses.
 
-| Name                       | Description         |
-| -------------------------- | ------------------- |
+| Name                            | Description              |
+| ------------------------------- | ------------------------ |
 | `bujo-lite.symbol.setCompleted` | BuJo-Lite: Set Completed |
 | `bujo-lite.symbol.setOpened`    | BuJo-Lite: Set Open      |
 | `bujo-lite.symbol.setStarted`   | BuJo-Lite: Set Started   |
