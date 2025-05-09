@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.1] - 2025.05.09
+
+### Added
+
+- Add dependency: Prettier.
+
+### Changed
+
+- Update dependencies.
+- Use ESModule.
+
 ## [1.0.0] - 2025.05.07
 
 ### Changed

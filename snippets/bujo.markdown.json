@@ -1,23 +1,21 @@
 {
-    "task": {
-        "prefix": "task",
-        "scope": "markdown",
-        "body": "- [ ] $1",
-        "description": "Enter a task"
-    },
-    "task from clipboard": {
-        "prefix": "taskclip",
-        "scope": "markdown",
-        "body": "- [ ] $CLIPBOARD$0",
-        "description": "Enter a task from clipboard"
-    },
+  "task": {
+    "prefix": "task",
+    "scope": "markdown",
+    "body": "- [ ] $1",
+    "description": "Enter a task"
+  },
+  "task from clipboard": {
+    "prefix": "taskclip",
+    "scope": "markdown",
+    "body": "- [ ] $CLIPBOARD$0",
+    "description": "Enter a task from clipboard"
+  },
 
-    "scratch text": {
-        "prefix": "scratch",
-        "scope": "markdown",
-        "body": [
-            "~${TM_SELECTED_TEXT}~"
-        ],
-        "description": "Scratch a text selection"
-    }
+  "scratch text": {
+    "prefix": "scratch",
+    "scope": "markdown",
+    "body": ["~${TM_SELECTED_TEXT}~"],
+    "description": "Scratch a text selection"
+  }
 }
