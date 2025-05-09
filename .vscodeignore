@@ -4,6 +4,7 @@
 .gitignore
 tsconfig.json
 .eslintrc.json
+.npmcheckrc
 package-json.lock
 webpack.config.js
 CNAME
