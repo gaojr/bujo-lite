@@ -24,10 +24,9 @@ const config = {
   experiments: {
     outputModule: true,
   },
-  devtool: 'source-map',
-  externalsType: 'commonjs',
+  externalsType: 'module',
   externals: {
-    vscode: 'commonjs vscode',
+    vscode: 'vscode',
   },
   resolve: {
     mainFields: ['browser', 'module', 'main'],

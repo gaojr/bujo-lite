@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.2] - 2025.05.12
+
+### Fixed
+
+- Problem due to webpack config error.
+
 ## [1.0.1] - 2025.05.09
 
 ### Added
