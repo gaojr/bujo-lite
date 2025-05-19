@@ -23,12 +23,12 @@ Provides highlighting for the standard Bullet Journal entries.
 
 Proposes commands and keybindings to effortlessly update task statuses.
 
-| Name                            | Description              |
-| ------------------------------- | ------------------------ |
-| `bujo-lite.symbol.setCompleted` | BuJo-Lite: Set Completed |
-| `bujo-lite.symbol.setOpened`    | BuJo-Lite: Set Open      |
-| `bujo-lite.symbol.setStarted`   | BuJo-Lite: Set Started   |
-| `bujo-lite.symbol.setDropped`   | BuJo-Lite: Set Dropped   |
+| Name                            | Description              | Shortcut    |
+| ------------------------------- | ------------------------ | ----------- |
+| `bujo-lite.symbol.setCompleted` | BuJo-Lite: Set Completed | `alt` + `x` |
+| `bujo-lite.symbol.setOpened`    | BuJo-Lite: Set Open      | `alt` + `o` |
+| `bujo-lite.symbol.setStarted`   | BuJo-Lite: Set Started   | `alt` + `/` |
+| `bujo-lite.symbol.setDropped`   | BuJo-Lite: Set Dropped   | `alt` + `-` |
 
 ## Release Notes
 
